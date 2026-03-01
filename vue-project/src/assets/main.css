@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* Al usar --color-*, Tailwind crea bg-yoga-*, text-yoga-*, border-yoga-*, etc. */
+  --color-yoga-deep: #344e41;
+  --color-yoga-sage: #a3b18a;
+  --color-yoga-cream: #fefae0;
+  --color-yoga-earth: #bc6c25;
+
+  /* Puedes hacer lo mismo con fuentes, espaciados, etc. */
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    /* ¡Mira qué limpio queda ahora! */
+    @apply bg-yoga-cream text-yoga-deep font-sans antialiased;
+  }
+}
